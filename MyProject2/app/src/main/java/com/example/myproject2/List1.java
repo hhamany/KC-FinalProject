@@ -1,20 +1,12 @@
 package com.example.myproject2;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ImageView;
-
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 
 public class List1 extends AppCompatActivity{
@@ -60,14 +52,6 @@ String[] medUrl = {"https://www.pharmazonekw.com/panadol-extra-48-tab" , "https:
         }
         MedAdapter2 = new MedAdapter2( getApplicationContext(),medItem);
         recycleview.setAdapter(MedAdapter2);
-        ImageView goback = findViewById(R.id.goback);
-        goback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent goback = new Intent(List1.this,FirsPage.class) ;
-                startActivity(goback);
-            }
-        });
 
     }
 }

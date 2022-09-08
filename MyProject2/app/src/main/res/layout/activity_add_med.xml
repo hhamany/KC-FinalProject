@@ -72,25 +72,6 @@
             app:layout_constraintVertical_bias="0.288"
             tools:ignore="TextContrastCheck" />
 
-        <TextView
-            android:id="@+id/timeshow1"
-            android:layout_width="103dp"
-            android:layout_height="47dp"
-            android:ems="10"
-            android:fontFamily="sans-serif-black"
-            android:inputType="textPersonName"
-            android:paddingTop="5dp"
-            android:text="time"
-            android:textColor="#1E60B8"
-            android:textSize="18dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.511"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.67"
-            tools:ignore="TextContrastCheck" />
-
         <EditText
             android:id="@+id/medsize"
             android:layout_width="277dp"
@@ -145,9 +126,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.906" />
+            app:layout_constraintVertical_bias="0.738" />
 
         <Button
             android:id="@+id/alarm1"
@@ -165,23 +147,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.568" />
-
-        <Button
-            android:id="@+id/set1"
-            android:layout_width="109dp"
-            android:layout_height="59dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#00C2CB"
-            android:fontFamily="@font/fontyy"
-            android:text="أضبط منبه"
-            android:textSize="17dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.765" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
