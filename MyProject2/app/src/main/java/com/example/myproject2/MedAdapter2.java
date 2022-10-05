@@ -16,7 +16,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.airbnb.lottie.LottieAnimationView;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -44,7 +43,6 @@ public class MedAdapter2 extends RecyclerView.Adapter<MedAdapter2.MyViewHolder> 
         holder.medName.setText(Details2.get("mednames"));
         holder.medPrice.setText(Details2.get("medprices"));
         holder.medimg.setImageResource(Integer.parseInt(Details2.get("medimages")));
-        holder.medLott.setAnimation(Integer.parseInt(Details2.get("medanimations")));
         holder.buynow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,14 +66,12 @@ public class MedAdapter2 extends RecyclerView.Adapter<MedAdapter2.MyViewHolder> 
         ImageView medimg;
         LottieAnimationView medLott;
         Button buynow ;
-        Button addToList ;
 
         MyViewHolder(@NonNull View itemView) {
             super(itemView);
             medName = (TextView) itemView.findViewById(R.id.name3);
             medPrice = (TextView) itemView.findViewById(R.id.price3);
             medimg = (ImageView) itemView.findViewById(R.id.img3);
-            medLott = (LottieAnimationView) itemView.findViewById(R.id.lottiepic3);
             buynow = (Button) itemView.findViewById(R.id.buynow);
 
         }

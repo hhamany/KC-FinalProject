@@ -1,13 +1,11 @@
 package com.example.myproject2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,20 +14,20 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageView btn = findViewById(R.id.sign);
-        TextView hi = findViewById(R.id.hi);
+        TextView signin = findViewById(R.id.signin);
+        TextView signup = findViewById(R.id.signup);
 
-        hi.setOnClickListener(new View.OnClickListener() {
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(MainActivity.this, SignActivity.class);
                 startActivity(intent1);
             }
         });
-        btn.setOnClickListener(new View.OnClickListener() {
+        signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SignActivity.class);
+                Intent intent = new Intent(MainActivity.this, SigninActivity.class);
                 startActivity(intent);
             }
         });

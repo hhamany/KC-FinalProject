@@ -1,12 +1,12 @@
 package com.example.myproject2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
 
@@ -31,16 +31,16 @@ public class SignActivity extends AppCompatActivity {
                     name.setError("لرجاء ادخال اسمك ");
                 }
 
-                else   if (TextUtils.isEmpty(email.getText())){
-                    email.setError("لرجاء ادخال الايميل ");
-                }
-
                 else   if (TextUtils.isEmpty(age.getText())){
-                    age.setError("لرجاء ادخال عمرك ");
+                    age.setError("لرجاء ادخال العمر ");
                 }
 
                 else   if (TextUtils.isEmpty(phone.getText())){
-                    phone.setError("لرجاء ادخال رقم الهاتف ");
+                    phone.setError("لرجاء ادخال رقم هاتفك ");
+                }
+
+                else   if (TextUtils.isEmpty(email.getText())){
+                    email.setError("لرجاء ادخال الايميل ");
                 }
                 else   if (TextUtils.isEmpty(pass.getText())){
                     pass.setError("لرجاء ادخال الرقم السري ");

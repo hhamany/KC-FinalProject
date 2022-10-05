@@ -3,12 +3,10 @@ package com.example.myproject2;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.provider.Contacts;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,7 +18,6 @@ import com.airbnb.lottie.LottieAnimationView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class PharmaciesAdapter extends RecyclerView.Adapter<PharmaciesAdapter.MyViewHolder> {
     private ArrayList<HashMap<String, String>> dataSet;
@@ -44,7 +41,6 @@ public class PharmaciesAdapter extends RecyclerView.Adapter<PharmaciesAdapter.My
         final HashMap<String, String> Details = dataSet.get(position);
         holder.pharmacyName.setText(Details.get("phname"));
         holder.pharmacyImage.setImageResource(Integer.parseInt(Details.get("images")));
-        holder.pharmacyLot.setAnimation(Integer.parseInt(Details.get("animation")));
         holder.visit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,7 +80,6 @@ public class PharmaciesAdapter extends RecyclerView.Adapter<PharmaciesAdapter.My
             pharmacyName = (TextView) itemView.findViewById(R.id.namep);
             getPharmacyNumber =  (Button) itemView.findViewById(R.id.call);
             pharmacyImage = (ImageView) itemView.findViewById(R.id.imgp);
-            pharmacyLot = (LottieAnimationView) itemView.findViewById(R.id.pharmacylottiepic3);
             visit = (Button) itemView.findViewById(R.id.visit);
 
         }

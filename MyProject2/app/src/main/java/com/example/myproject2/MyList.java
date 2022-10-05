@@ -37,7 +37,7 @@ public class MyList extends AppCompatActivity {
         addmedd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MyList.this,AddMed.class);
+                Intent intent = new Intent(MyList.this,AddingMedActivity.class);
                 startActivity(intent);
             }
         });

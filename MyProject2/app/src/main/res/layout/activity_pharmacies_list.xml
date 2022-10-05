@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pharmacies"
+    android:background="@drawable/addmedpng"
     tools:context=".PharmaciesList">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,31 +18,44 @@
         android:layout_marginTop="-1dp"
         android:layout_marginEnd="-3dp">
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="398dp"
+            android:layout_height="228dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.082"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/pharmalot">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
         <TextView
             android:id="@+id/pupular"
-            android:layout_width="393dp"
-            android:layout_height="106dp"
+            android:layout_width="244dp"
+            android:layout_height="102dp"
             android:fontFamily="@font/fontyy"
             android:text="الصيدليات"
-            android:textColor="@color/white"
+            android:textColor="#ffffff"
             android:textSize="50dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.012" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/prv"
-            android:layout_width="411dp"
-            android:layout_height="349dp"
+            android:layout_width="374dp"
+            android:layout_height="290dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.666"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.44" />
+            app:layout_constraintVertical_bias="0.773" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

@@ -1,14 +1,14 @@
 package com.example.myproject2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class Destination extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MyDescription extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_destination);
+        setContentView(R.layout.activity_my_description);
     }
 }

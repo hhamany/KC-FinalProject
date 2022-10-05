@@ -21,11 +21,8 @@ String[] medUrl = {"https://www.pharmazonekw.com/panadol-extra-48-tab" , "https:
 , "https://www.pharmazonekw.com/sterimar-blocked-nose-100-ml", "https://www.pharmazonekw.com/carroten-summer-dreams-spf6-tanning-oil-200ml"
 , "https://www.pharmazonekw.com/revitol-sunblock-tinted-lotion-spf50-offer-1-1" , "https://www.pharmazonekw.com/cetaphil-moisturizing-jar-cr-453gm"} ;
     private RecyclerView.Adapter MedAdapter2;
-    int[] medimage = {R.drawable.panadol, R.drawable.medicine1, R.drawable.clean , R.drawable.gel ,R.drawable.vit,R.drawable.nose ,
-    R.drawable.tanoil , R.drawable.sunblock, R.drawable.lotion};
-    int[] medLott = { R.raw.pills ,R.raw.pills ,R.raw. gell , R.raw.gell , R.raw.pills, R.raw.spray ,R.raw.spray ,R.raw.gell ,
-            R.raw.gell };
-
+    int[] medimage = {R.drawable.panadol, R.drawable.panadol, R.drawable.panadol , R.drawable.gel ,R.drawable.vit,R.drawable.nose ,
+    R.drawable.panadol , R.drawable.sunblock, R.drawable.lotion};
     static ArrayList <HashMap< String, String >> medItem;
     HashMap < String,String > map;
 
@@ -36,7 +33,7 @@ String[] medUrl = {"https://www.pharmazonekw.com/panadol-extra-48-tab" , "https:
         setContentView(R.layout.activity_list1);
         recycleview = findViewById(R.id.rv);
 
-        LinearLayoutManager mLayoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
+        LinearLayoutManager mLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         recycleview.setLayoutManager(mLayoutManager);
         medItem = new ArrayList < >();
 
@@ -46,12 +43,12 @@ String[] medUrl = {"https://www.pharmazonekw.com/panadol-extra-48-tab" , "https:
             map.put("mednames", medname[i]);
             map.put("medprices", medprice[i] + "");
             map.put("medimages", medimage[i] + "");
-            map.put("medanimations", medLott[i] + "");
             map.put("medurl", medUrl[i]);
             medItem.add(map);
         }
         MedAdapter2 = new MedAdapter2( getApplicationContext(),medItem);
         recycleview.setAdapter(MedAdapter2);
+
 
     }
 }

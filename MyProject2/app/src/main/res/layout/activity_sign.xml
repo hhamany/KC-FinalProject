@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/w4"
+    android:background="@drawable/signupwall"
     tools:context=".SignActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,10 +28,10 @@
             android:textSize="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.012" />
+            app:layout_constraintVertical_bias="0.016" />
 
         <EditText
             android:id="@+id/name"
@@ -39,17 +39,18 @@
             android:layout_height="48dp"
             android:layout_marginTop="7dp"
             android:ems="10"
-            android:fontFamily="@font/fontsss2"
+            android:fontFamily="@font/fontyy"
             android:hint="اكتب إسمك"
             android:inputType="textPersonName"
             android:paddingRight="20dp"
             android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.235" />
+            app:layout_constraintVertical_bias="0.397" />
 
         <EditText
             android:id="@+id/age"
@@ -57,17 +58,18 @@
             android:layout_height="48dp"
             android:layout_marginTop="17dp"
             android:ems="10"
-            android:fontFamily="@font/fontsss2"
+            android:fontFamily="@font/fontyy"
             android:hint="كم عمرك"
             android:inputType="textPersonName"
             android:paddingRight="20dp"
             android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.322" />
+            app:layout_constraintVertical_bias="0.484" />
 
         <EditText
             android:id="@+id/phone"
@@ -75,35 +77,37 @@
             android:layout_height="48dp"
             android:layout_marginTop="1.5dp"
             android:ems="10"
-            android:fontFamily="@font/fontsss2"
+            android:fontFamily="@font/fontyy"
             android:hint="رقم هاتفك "
             android:inputType="textPersonName"
             android:paddingRight="24dp"
             android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.438" />
+            app:layout_constraintVertical_bias="0.615" />
 
         <EditText
             android:id="@+id/pass"
             android:layout_width="233dp"
             android:layout_height="48dp"
-            android:ems="10"
-            android:fontFamily="@font/fontsss2"
-            android:hint="الرقم السري"
             android:layout_marginTop="15dp"
+            android:ems="10"
+            android:fontFamily="@font/fontyy"
+            android:hint="الرقم السري"
             android:inputType="textVisiblePassword"
             android:paddingRight="20dp"
             android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.624" />
+            app:layout_constraintVertical_bias="0.835" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lot"
@@ -111,33 +115,63 @@
             android:layout_height="102dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.308"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.798"
+            app:layout_constraintVertical_bias="1.0"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/next2"
+            app:lottie_rawRes="@raw/mynext"
             tools:ignore="MissingConstraints" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lot2"
+            android:layout_width="257dp"
+            android:layout_height="177dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.582"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.093"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/signinlotttt"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="105dp"
+            android:layout_height="63dp"
+            android:fontFamily="@font/fontyy"
+            android:text="التالي"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.834"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.951" />
 
         <EditText
             android:id="@+id/email"
             android:layout_width="234dp"
             android:layout_height="48dp"
-            android:ems="10"
-            android:fontFamily="sans-serif-black"
-            android:hint="اكتب الايميل"
             android:layout_marginTop="14dp"
+            android:ems="10"
+            android:fontFamily="@font/fontyy"
+            android:hint="اكتب الايميل"
             android:inputType="textEmailAddress"
             android:paddingRight="20dp"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.097"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.526" />
+            app:layout_constraintVertical_bias="0.71" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -147,10 +181,10 @@
             android:src="@drawable/user"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.671"
+            app:layout_constraintHorizontal_bias="0.877"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.232" />
+            app:layout_constraintVertical_bias="0.408" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -159,10 +193,9 @@
             android:src="@drawable/ageicon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.672"
+            app:layout_constraintHorizontal_bias="0.878"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.329" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -171,10 +204,10 @@
             android:src="@drawable/phoneeee"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.684"
+            app:layout_constraintHorizontal_bias="0.884"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.429" />
+            app:layout_constraintVertical_bias="0.612" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -183,10 +216,10 @@
             android:layout_marginTop="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.672"
+            app:layout_constraintHorizontal_bias="0.872"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.517"
+            app:layout_constraintVertical_bias="0.72"
             app:srcCompat="@drawable/ic_baseline_email_24" />
 
         <ImageView
@@ -196,10 +229,10 @@
             android:src="@drawable/lock"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.675"
+            app:layout_constraintHorizontal_bias="0.865"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.621" />
+            app:layout_constraintVertical_bias="0.82" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

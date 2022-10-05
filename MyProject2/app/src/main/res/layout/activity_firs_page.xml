@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newback"
+    android:background="@drawable/medicalmainlist"
     tools:context=".FirsPage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -22,44 +22,43 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie"
-            android:layout_width="158dp"
-            android:layout_height="141dp"
+            android:layout_width="183dp"
+            android:layout_height="160dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintHorizontal_bias="0.986"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.097"
+            app:layout_constraintVertical_bias="0.521"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/mylisttt"
+            app:lottie_rawRes="@raw/mylistmeddd"
             tools:ignore="MissingConstraints" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie2"
-            android:layout_width="130dp"
-            android:layout_height="109dp"
+            android:layout_width="165dp"
+            android:layout_height="143dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.099"
+            app:layout_constraintHorizontal_bias="0.024"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.471"
+            app:layout_constraintVertical_bias="0.523"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/medlooooot"
+            app:lottie_rawRes="@raw/edpills"
             tools:ignore="MissingConstraints" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie3"
-            android:layout_width="179dp"
-            android:layout_height="263dp"
+            android:layout_width="244dp"
+            android:layout_height="150dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.025"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.982"
+            app:layout_constraintVertical_bias="0.893"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/pharmacy2"
@@ -72,31 +71,15 @@
             android:fontFamily="@font/fontyy"
             android:paddingRight="50dp"
             android:text="أدويتي"
-            android:textColor="@color/white"
+            android:textColor="#00cff0"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.092"
+            app:layout_constraintHorizontal_bias="0.991"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.314" />
-
-        <TextView
-            android:id="@+id/my4"
-            android:layout_width="246dp"
-            android:layout_height="69dp"
-            android:fontFamily="@font/fontyy"
-            android:text="تطبيق دوائي"
-            android:textColor="#ffffff"
-            android:textSize="39sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.957"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.029" />
+            app:layout_constraintVertical_bias="0.689" />
 
         <TextView
             android:id="@+id/my3"
@@ -106,12 +89,11 @@
             android:fontFamily="@font/fontyy"
             android:paddingRight="6dp"
             android:text="الصيدليات"
-            android:textColor="@color/white"
+            android:textColor="#00cff0"
             android:textSize="35sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.028"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
@@ -123,7 +105,7 @@
             android:fontFamily="@font/fontyy"
             android:paddingRight="18dp"
             android:text="قائمة الأدوية"
-            android:textColor="@color/white"
+            android:textColor="#00cff0"
             android:textSize="32sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -131,7 +113,7 @@
             app:layout_constraintHorizontal_bias="0.026"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.635" />
+            app:layout_constraintVertical_bias="0.667" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

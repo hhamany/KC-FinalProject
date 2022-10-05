@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/dessssss"
+    android:layout_height="match_parent"
+    tools:context=".MyDescription">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            android:id="@+id/nameeeeeee"
+            android:layout_width="166dp"
+            android:layout_height="66dp"
+            android:fontFamily="@font/fontyy"
+            android:text="تطبيق دوائي"
+            android:textColor="#38B6FF"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.91"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.207" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="372dp"
+            android:layout_height="275dp"
+            android:fontFamily="@font/fontyy"
+            android:text="هو تطبيق يساعدك في حل مشكلة نسيان مواعيد الدواء و ايضاً يمكنك من خلاله طلب الادوية الخاصة بك و الاتصال بالصيدليات المختلفة. "
+            android:textColor="#38B6FF"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.748" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

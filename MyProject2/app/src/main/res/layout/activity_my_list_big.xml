@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/medicalback"
+    android:background="@drawable/addmedpng"
     tools:context=".MyList">
 
 
@@ -35,6 +35,21 @@
         app:lottie_rawRes="@raw/add"
         tools:ignore="DuplicateIds" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/medlott"
+        android:layout_width="404dp"
+        android:layout_height="262dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/mymedlot"
+        tools:ignore="DuplicateIds" />
+
     <TextView
         android:id="@+id/mylistmed"
         android:layout_width="283dp"
@@ -45,10 +60,10 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.171" />
+        app:layout_constraintVertical_bias="0.029" />
 
     <TextView
         android:id="@+id/addmed"
@@ -68,13 +83,15 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/myList"
-        android:layout_width="362dp"
-        android:layout_height="270dp"
+        android:layout_width="360dp"
+        android:layout_height="232dp"
         android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

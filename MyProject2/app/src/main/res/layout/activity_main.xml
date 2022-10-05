@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/doctorback"
+    android:background="@drawable/mainbackgo"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,65 +20,52 @@
         android:layout_marginBottom="2dp">
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/lottie"
-            android:layout_width="316dp"
-            android:layout_height="198dp"
+            android:id="@+id/lottie4"
+            android:layout_width="508dp"
+            android:layout_height="344dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/doctorss"
+            app:lottie_rawRes="@raw/maindoctor"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/welcome"
-            android:layout_width="393dp"
+            android:id="@+id/signin"
+            android:layout_width="294dp"
             android:layout_height="68dp"
-            android:fontFamily="@font/font2"
-            android:text="مرحباً بك في تطبيق دوائي "
-            android:textColor="#5CE1E6"
-            android:textSize="19dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fontyy"
+            android:text="تسجيل الدخول"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintHorizontal_bias="0.137"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027" />
-
-        <ImageView
-            android:id="@+id/sign"
-            android:layout_width="106dp"
-            android:layout_height="115dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.544"
-            app:srcCompat="@drawable/register" />
-
-
-
+            app:layout_constraintVertical_bias="0.598" />
 
         <TextView
-            android:id="@+id/hi"
-            android:layout_width="299dp"
-            android:layout_height="54dp"
-            android:layout_centerHorizontal="true"
-            android:fontFamily="@font/font2"
-            android:text="انشئ حسابك الآن"
-            android:textColor="@color/white"
-            android:textSize="20dp"
+            android:id="@+id/signup"
+            android:layout_width="242dp"
+            android:layout_height="51dp"
+            android:fontFamily="@font/fontyy"
+            android:paddingLeft="40dp"
+            android:text="إنشاء حساب جديد"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.756"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.528" />
+            app:layout_constraintVertical_bias="0.789" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
