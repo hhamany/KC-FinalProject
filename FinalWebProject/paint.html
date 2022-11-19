@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        مهارة الرسم
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  
+  <style>@font-face {
+    font-family: ahlan;
+    src: url(ahlanfont.otf);
+  }</style>
+</head>
+
+
+  
+
+<nav class="navbar navbar-expand-lg" style=" background-image: linear-gradient(25deg, #257cce 25%, #1589ddc8 100%)">
+  <div class="container-fluid">
+    <a style="color: rgb(255, 255, 255); font-size: 30px;" class="navbar-brand" href="#">ساعدني</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div style="font-family: ahlan; margin-left: 500px;display: flex;flex-direction: row;margin-right: 40px; justify-content: center;">
+        <a  style="font-family: ahlan; padding-right: 10px;border-right: 3px solid rgb(255, 255, 255);color: white;" class="nav-link" href="hoppies.html">تعلم</a>
+        <a style="font-family: ahlan;padding-right: 10px;border-right: 3px solid rgb(255, 255, 255);color: white;" class="nav-link" href="shop.html">السوق</a>
+        <a style="font-family: ahlan;padding-right: 10px; border-right: 3px solid rgb(255, 255, 255);color: white;" class="nav-link" href="job.html">وظف</a>
+    </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<body style=" background-image: linear-gradient(25deg, #257cce 25%, #1589ddc8 100%)">
+        <section class="paintsection">
+          <div class="sec paintsec"></div>
+          <div class="sec paintsec2"></div>
+          <h2 style="font-size: 18em; ;">الرسم</h2>
+        </section>
+
+        <div
+        style="
+          width: 100%;
+          height: 100vh;
+          background-image: url('images/paintwall2.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        "
+      >
+        <div style="float: right;color: rgb(255, 255, 255); font-size: 100px; margin-right: 250px;font-weight: bolder; margin-top: 200px;"><span>مرحباً بك في مهارة الرسم</span>
+        </div>
+      </div>
+
+    
+      <div style="background-image: linear-gradient(9deg, #5595f5 0%, #8caef9 100%);
+      height: 200vh;
+      background-color: #ab36ff;">
+        <img style="float: right;
+        align-items:center ;  
+        width: 400px;
+        height: 400px;margin-top: 45px;" src="images/painting3d.webp" alt="" />
+        <div class="text2">
+          <p style="text-align: center;">
+             يمكنك أن تتعلم مهارة الرسم و تعلم أساسياتها لتصبح رسام بارع 
+          </p>
+        </div>
+
+
+        <img style="float: right;
+        align-items:center ;  
+        width: 400px;
+        height: 400px;margin-top: 45px;" src="images/paintboard.webp" alt="" />
+        <div class="text2">
+          <p style="text-align: center;">
+             سوف تتمكن من رسم أي شي و تبدع 
+          </p>
+        </div>
+
+        <img style="float: right;
+        align-items:center ;  
+        width: 340px;
+        height: 340px;margin-top: 45px; margin-right:70px;" src="images/paintpin.webp" alt="" />
+        <div class="text2">
+          <p style="text-align: center;">
+أطلق الإبداع من مخيلتك          </p>
+        </div>
+
+      </div>
+
+      <h1 style="color: white; margin-left: 650px;margin-top: 20px; font-size: 80px;">ابدأ الآن</h1>
+<div  class="paintcontainer">
+    <img 
+      src="images/painting.webp"
+      alt="Avatar"
+      style="width: 200px; height: 200px;margin-top: 30px; display: inline-block"
+    />      
+    <div >
+      <h4
+        style="
+          text-align: center;
+          margin-top: 100px;
+          color: aliceblue;
+          width: 100%;">
+        <b style="font-size: 30px;">تعلم مهارة الرسم الآن
+         </b>
+      </h4>
+      <a href="https://www.youtube.com/watch?v=qeIzO2hH-lg&list=PLszusRlhWcGcPkDPRLJVrHENvSRCfoXuh" target="_blank"><button style="font-family: ahlan;" class="visitbuttonpaint">اضغط هنا</button></a>
+    </div>
+</div>
+</div>
+</div>
+
+    <script>
+        let sec1 = document.querySelector(".paintsec");
+        let sec2 = document.querySelector(".paintsec2");
+        window.addEventListener("scroll", function () {
+          var value = this.window.scrollY;
+          sec1.style.clipPath = "circle(" + value * 1.15 + "px at 0 0 )";
+          sec2.style.clipPath = "circle(" + value * 0.85 + "px at 100% 100% )";
+        });
+      </script>
+ <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+ <div class="elfsight-app-95c3380b-7f02-4ad4-97cc-5cfe5d63648c"></div>
+</body>
+</html>

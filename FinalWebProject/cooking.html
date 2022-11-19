@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        مهارة الرسم
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+</head>
+
+
+  
+
+<nav class="navbar navbar-expand-lg" style=" background-image: linear-gradient(25deg, #f57643fd 25%, #ff8c34c8 100%)">
+  <div class="container-fluid">
+    <a style="color: rgb(255, 255, 255); font-size: 30px;" class="navbar-brand" href="index.html">ساعدني</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navdiv" style="margin-left: 500px;display: flex;flex-direction: row;margin-right: 40px; justify-content: center;">
+        <a  style="padding-right: 10px;border-right: 1px solid rgb(255, 255, 255);color: white;" class="nav-link" href="hoppies.html">تعلم</a>
+        <a style="padding-right: 10px;border-right: 1px solid rgb(255, 255, 255);color: white;" class="nav-link" href="shop.html">السوق</a>
+        <a style="padding-right: 10px; border-right: 1px solid rgb(255, 255, 255);color: white;" class="nav-link" href="job.html">وظف</a>
+    </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<body style=" background-image: linear-gradient(25deg, #ffb991 25%, #ff9626c8 100%)">
+        <section class="cooksection">
+          <div class="sec cooksec"></div>
+          <div class="sec cooksec2"></div>
+          <h2 style="font-size: 15em;color: rgb(255, 255, 255) ;">الطبخ</h2>
+        </section>
+
+        <div
+        style="
+          width: 100%;
+          height: 100vh;
+          background-image: url('images/cookingwall.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        "
+      >
+        <div style="float: right;color: rgb(255, 255, 255); font-size: 100px; margin-right: 250px;font-weight: bolder; margin-top: 200px;"><span>مرحباً بك في مهارة الطبخ</span>
+        </div>
+      </div>
+
+    
+      <div style="background-image: linear-gradient(9deg, #f59a55 0%, #f9b48c 100%);
+      height: 60vh;
+      background-color: #ab36ff;">
+        <img style="float: right;
+        align-items:center ;  
+        width: 400px;
+        height: 400px;margin-top: 45px;" src="images/cooking3d.webp" alt="" />
+        <div class="text2">
+          <p style="text-align: center;">
+             يمكنك أن تتعلم مهارة الطبخ و تعلم أساسياتها لتصبح طباخ محترف 
+          </p>
+        </div>
+      </div>
+
+      
+<div  class="cookingcontainer">
+    <img 
+      src="images/cooking3d2.webp"
+      alt="Avatar"
+      style="width: 200px; height: 200px;margin-top: 30px; display: inline-block"
+    />      
+    <div >
+      <h4
+        style="
+          text-align: center;
+          margin-top: 100px;
+          color: aliceblue;
+          width: 100%;">
+        <b style="font-size: 30px;">تعلم أساسيات الطبخ الآن
+         </b>
+      </h4>
+      <a href="https://www.youtube.com/watch?v=cZehzKfthYU&list=PLpseQaTy0CU4j9PiwPl7buqpV2mrMtEYb" target="_blank"><button class="buttoncooking">اضغط هنا</button></a>
+    </div>
+</div>
+
+
+
+     
+<div  class="cookingcontainer">
+    <img 
+      src="images/cookingimg.webp"
+      alt="Avatar"
+      style="width: 200px; height: 200px;margin-top: 30px; display: inline-block"
+    />      
+    <div >
+      <h4
+        style="
+          text-align: center;
+          margin-top: 100px;
+          color: aliceblue;
+          width: 100%;">
+        <b style="font-size: 30px;">  gordon ramsay's  وصفات  
+         </b>
+      </h4>
+      <a href="https://www.youtube.com/watch?v=hXdfWJbFnqA&list=PLTzMGnJjrsSyTppvwM66fJbQQFeaEgyxE" target="_blank"><button class="buttoncooking">اضغط هنا</button></a>
+    </div>
+</div>
+
+
+
+    <script>
+        let sec1 = document.querySelector(".cooksec");
+        let sec2 = document.querySelector(".cooksec2");
+        window.addEventListener("scroll", function () {
+          var value = this.window.scrollY;
+          sec1.style.clipPath = "circle(" + value * 1.15 + "px at 0 0 )";
+          sec2.style.clipPath = "circle(" + value * 0.85 + "px at 100% 100% )";
+        });
+      </script>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-95c3380b-7f02-4ad4-97cc-5cfe5d63648c"></div>
+</body>
+</html>
